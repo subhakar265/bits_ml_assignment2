@@ -18,11 +18,11 @@ st.write("Upload your test dataset (CSV) to select trained models and view evalu
 @st.cache_resource
 def load_artifacts():
     models = {
-        "Logistic Regression": joblib.load("clf.joblib"),
-        "Decision Tree Classifier": joblib.load("dtc.joblib"),
-        "KNN Classifier": joblib.load("knnc.joblib"),
-        "Naive Bayes Classifier": joblib.load("nbc.joblib"),
-        "Random Forest": joblib.load("rf.joblib")
+        "Logistic Regression": joblib.load("models/clf.joblib"),
+        "Decision Tree Classifier": joblib.load("models/dtc.joblib"),
+        "KNN Classifier": joblib.load("models/knnc.joblib"),
+        "Naive Bayes Classifier": joblib.load("models/nbc.joblib"),
+        "Random Forest": joblib.load("models/rf.joblib")
     }
     return models
 
