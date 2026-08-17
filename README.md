@@ -19,7 +19,7 @@ The purpose of this project is to develop a Machine Learning (ML) classification
   * `streamlit_app.py`: Streamlit web app supporting CSV upload, model selection, metric calculation, confusion matrix, and classification report.
   * `2025AC05587.ipynb`: Jupyter notebook containing model and evaluation.
   * `models/`: Folder containing saved model artifacts (`.joblib` and `.ipynb`).
-  * `data/Cancer_Data.csv`: Sample test dataset for Streamlit app evaluation.
+  * `Cancer_Data.csv`: Sample test dataset for Streamlit app evaluation.
   * `requirements.txt`: List of Python packages required for deployment.
   * `README.md`: Project documentation and model comparison report.
 
