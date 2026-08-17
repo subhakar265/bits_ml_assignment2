@@ -62,6 +62,9 @@ if uploaded_file is not None:
 
         # Preprocess features
         # X_test_scaled = scaler.transform(X_test)
+        if hasattr(model, "feature_names_in_"):
+            # Ensures X_test has the exact features and column order expected by the model
+            X_test = X_test[model.feature_names_in_]
 
         # Predict
         y_pred = model.predict(X_test)
