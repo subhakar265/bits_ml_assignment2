@@ -19,7 +19,7 @@ The purpose of this project is to develop a Machine Learning (ML) classification
   * `streamlit_app.py`: Streamlit web app supporting CSV upload, model selection, metric calculation, confusion matrix, and classification report.
   * `2025AC05587.ipynb`: Jupyter notebook containing model and evaluation.
   * `models/`: Folder containing saved model artifacts (`.joblib` and `.ipynb`).
-  * `Cancer_Data.csv`: Sample test dataset for Streamlit app evaluation.
+  * `data/Cancer_Data.csv`: Sample test dataset for Streamlit app evaluation.
   * `requirements.txt`: List of Python packages required for deployment.
   * `README.md`: Project documentation and model comparison report.
 
@@ -29,13 +29,13 @@ The purpose of this project is to develop a Machine Learning (ML) classification
 
 ### 1. Model Evaluation Metrics Comparison Table
 
-| ML Model Name | Accuracy | Precision | Recall | F1 | MCC |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Logistic Regression** | `92.28` | `93.07` | `92.98` | `92.90` | `.85` | 
-| **Decision Tree** | `91.23` | `91.23` | `91.23` | `91.23` | `.81` |
-| **kNN** | `96.49` | `96.68` | `96.49` | `96.45` | `.93` |
-| **Naive Bayes** | `91.23` | `91.27` | `91.23` | `91.13` | `.81` | 
-| **Random Forest (Ensemble)** | `97.37` | `97.37` | `97.37` | `97.36` | `.94` |
+| ML Model Name | Accuracy | Precision | Recall | F1 | MCC | ROC_AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Logistic Regression** | `92.28` | `93.07` | `92.98` | `92.90` | `.85` | `.955` |
+| **Decision Tree** | `91.23` | `91.23` | `91.23` | `91.23` | `.81` | `.9058` |
+| **kNN** | `96.49` | `96.68` | `96.49` | `96.45` | `.93` | `.9765` |
+| **Naive Bayes** | `91.23` | `91.27` | `91.23` | `91.13` | `.81` | `.9335` |
+| **Random Forest (Ensemble)** | `97.37` | `97.37` | `97.37` | `97.36` | `.94` | `.9979` |
 
 ---
 
